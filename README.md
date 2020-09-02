@@ -35,16 +35,17 @@ python scrape_profiles.py test_profiles.csv
 
 This is a raw HTML template which searches through the profiles script dt variable (dt is the list of JSON profiles in profiles.js) and given the name to look for in search.js, populates the template with the *author profile object attributes*
 
+###### _Default profile card_
 <img src="https://github.com/mkhanyisig/RandomCodeSamples/blob/master/Screen%20Shot%202020-09-02%20at%201.10.54%20AM.png">
 
 ### Create Templates for all profiles and save Raw HTML
 
-To automate the process of generating each profile card with *template.html*. 
-*generate_profiles.py* generates a JSON list of the HTML profile card's for each of the authors in raw text. 
+To automate the process of generating each profile card with * template.html *. 
+* generate_profiles.py * generates a JSON list of the HTML profile card's for each of the authors in raw text. 
 <pre><code>
 python generate_profiles.py 
 </code></pre>
-*generate_profile.py* takes in a command line argument, which is the author name to search for
+* generate_profile.py * takes in a command line argument, which is the author name to search for
 <pre><code>
 // format: generate_profile.py {author name}
 python generate_profile.py "author name"
