@@ -25,7 +25,7 @@ Same as general scraper, but takes in the author profiles csv file as a command 
 *_Usage_*
 
 <pre><code>
-// format: scrape_profiles.py <csv filename>
+// format: scrape_profiles.py {csv filename}
 python scrape_profiles.py test_profiles.csv
 </code></pre>
 
@@ -46,7 +46,7 @@ python generate_profiles.py
 </code></pre>
 *generate_profile.py* takes in a command line argument, which is the author name to search for
 <pre><code>
-// format: generate_profile.py <author name>
+// format: generate_profile.py {author name}
 python generate_profile.py "author name"
 </code></pre>
 
