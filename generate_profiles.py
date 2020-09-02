@@ -12,9 +12,7 @@ import time
 import json
 import os
 
-# global variables
-profile_map={}
-author_names=[]
+
 
 # Define Browser Options
 print("Setting Up Driver")
@@ -84,25 +82,35 @@ def get_authors(export_path):
     for obj in data:
         author_names.append(obj["Name"])
 
-# get profiles list and create profile template divs
+def main():
+    # get profiles list and create profile template divs
 
-# update author names list
-get_authors("profiles.json")
+    profile_map={}
+    author_names=[]
 
-#for author in author_names:
-#    get_profile(author)
+    # update author names list
+    get_authors("profiles.json")
 
-nm="Allan Armitage"
+    for author in author_names:
+        get_profile(author)
 
-get_profile(nm)
-print("************\n**********\n")
-print(profile_map[nm])
+    print("************\n**********\n")
+    print(profile_map[nm])
 
-export(profile_map);
+    export(profile_map);
 
 
-print("\n***\n***\n***\n",author_names,"\n***\n***\n***\n")
-print("total profiles: ",len(author_names))
+    print("\n***\n***\n***\n",author_names,"\n***\n***\n***\n")
+    print("total profiles: ",len(author_names))
 
-# close chrome tab
-browser.close()
+    # close chrome tab
+    browser.close()
+
+if __name__ == "__main__":
+
+    main()
+
+    print("\n ********** Profiles iFrame HTML list generated **********")
+    
+    # close chrome tab
+    browser.close()

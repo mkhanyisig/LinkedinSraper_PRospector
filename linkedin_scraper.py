@@ -585,5 +585,10 @@ exportDict(companies_json,past_companies)
 exportDict(author_jobhistory_json,past_job_details)
 exportDict(authors_education_json,education_experience)
 
+
+#   take in authorprofiles csv file as sys argument
+"""
+def main():
+"""
 # close chrome tab
 browser.close()
