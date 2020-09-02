@@ -51,6 +51,8 @@ python generate_profiles.py
 python generate_profile.py "author name"
 </code></pre>
 
+The profile card raw HTML text mapped to each author name are then stored in the file **profile_map.json**
+
 
 
 
