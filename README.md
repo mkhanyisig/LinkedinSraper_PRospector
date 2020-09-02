@@ -46,7 +46,7 @@ python generate_profiles.py
 </code></pre>
 *generate_profile.py* takes in a command line argument, which is the author name to search for
 <pre><code>
-// format: generate_profile.py <cauthor name>
+// format: generate_profile.py <author name>
 python generate_profile.py "author name"
 </code></pre>
 
